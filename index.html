@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Portfolio</title>
+        <div id="meta"></div>
+        <div id="embed"></div>
+        <link rel="stylesheet" href="assets/style.css">
+    </head>
+    <body>
+        <div class="main">
+            
+        </div>
+    </body>
+    <script>
+        fetch('elements/embed.html')
+            .then(res => res.text())
+            .then(data => {
+                document.getElementById('embed').innerHTML = data;
+            });
+
+        fetch('elements/meta.html')
+            .then(res => res.text())
+            .then(data => {
+                document.getElementById('meta').innerHTML = data;
+            });
+    </script>
+</html>
