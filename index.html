@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
     <head>
         <title>Portfolio</title>
         <div id="meta"></div>
@@ -8,20 +8,38 @@
     </head>
     <body>
         <div class="main">
-            
-        </div>
-    </body>
-    <script>
-        fetch('elements/embed.html')
-            .then(res => res.text())
-            .then(data => {
-                document.getElementById('embed').innerHTML = data;
-            });
+            <div class="wrapper">
+                <nav class="navbar">
+                    <ul>
+                        <li><a href="#profile">Profile</a></li>
+                        <li><a href="#experience">Experience</a></li>
+                        <li><a href="#projects">Projects</a></li>
+                        <li><a href="#contacts">Contacts</a></li>
+                    </ul>
+                </nav>
+                <section class="profile" id="profile">
+                    <div class="profile-container">
+                        <h1>Mark Clemence A. Aratan</h1>
+                        <p>sample title</p>
 
-        fetch('elements/meta.html')
-            .then(res => res.text())
-            .then(data => {
-                document.getElementById('meta').innerHTML = data;
-            });
-    </script>
+                        <p><img src="assets/images/profile-picture.jpg" alt="Profile">
+                            sample description about the profile goes here. This section can include a brief introduction, background information, or any other relevant details that showcase the individual's skills and experiences.</p>
+                        </p>
+                    </div>
+
+                </section>
+                
+                <section class="experience" id="experience">
+                    <h1>Experience</h1>
+                </section>
+                <section class="projects" id="projects">
+                    <h1>Projects</h1>
+                </section>
+                <section class="contacts" id="contacts">
+                    <h1>Contacts</h1>
+                </section>
+            </div>
+        </div>
+        <script src="assets/script.js"></script>
+    </body>
 </html>
