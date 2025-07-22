@@ -1,5 +1,5 @@
 const navbar = document.getElementById('navbar');
-const profileSection = document.getElementById('profile');
+const profileSection =  document.getElementById('profile');
 
 const observer = new IntersectionObserver(
     ([entry]) => {
@@ -11,8 +11,8 @@ const observer = new IntersectionObserver(
         }
     },
     {
-        threshold: 0.4, // Adjust this value to control when the navbar becomes transparent
-    },
-)
+        threshold: 0.4, // Adjust threshold as needed for navbar transparect according to the part of a section's visibility
+    }
+);
 
 observer.observe(profileSection);
