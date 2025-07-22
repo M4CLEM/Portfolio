@@ -13,6 +13,10 @@ html {
     width: 100%;
 }
 
+.navbar.transparent {
+    background-color: transparent;
+}
+
 .nav-list {
     list-style: none;
     display: flex;
