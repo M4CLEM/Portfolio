@@ -1,35 +1,110 @@
 body {
-    margin: 0;
-    padding: 0px 0px 0px 0px;
+    background-color: #5d5757;
 }
 
-html {
-    scroll-behavior: smooth;
+.portfolio-container {
+    display: grid;
+    column-gap: 20px;
+    grid-template-columns: 50% 50%;
+    max-width: 80vw;
+    max-height: 80vh;
+    transform: translateX(10vw) translateY(5vh);
 }
 
-.navbar {
-    position: fixed;
-    background-color: #0582ef;
+/*.portfolio-container > div {
+    border: 2px solid #1e1c1c;
+}*/
+
+.profile-container {
+    justify-items: justify;
+    padding: 0px 20px 20px 20px;
+    max-height: 98%;
+    overflow-y: hidden;
+    transform: translateY(-6%);
+    scrollbar-width: none; /* Hide scrollbar for Firefox */
+    -ms-overflow-style: none; /* Hide scrollbar for Internet Explorer and Edge */
+}
+
+.profile-container::-webkit-scrollbar {
+    display: none;  /* Hide scrollbar for Chrome, Safari, and Opera */
+}
+
+.job-title {
+    transform: translateY(-70%);
+}
+
+.summary {
+    text-align: justify;
+}
+
+.education-list {
+    list-style: none;
+    display: flex;
+    flex-wrap: wrap;
+    padding: 0;
+}
+
+.education-item {
+    padding: 0;
+    transform: translateY(-30%);
+}
+
+.quick-nav {    
+    justify-items: center;
     width: 100%;
 }
 
-.navbar.transparent {
-    background-color: transparent;
-}
-
-.nav-list {
+.quick-nav-list {
     list-style: none;
     display: flex;
+    flex-wrap: wrap;
+    margin-right: 40px;
     align-content: space-evenly;
 }
 
-.nav-item {
+.quick-nav-item {
     padding: 10px;
 }
 
+h1, h2, h3, h4, p, a , sub{
+    color: white;
+}
+
+.contacts {
+    justify-items: justify;
+}
+
+.contact-list {
+    list-style: none;
+    display: flex;
+    flex-wrap: wrap;
+    align-content: space-around;
+}
+
+.contact-icon {
+    height: 30px;
+    width: 30px;
+    float: inline-start;
+    margin-right: 10px;
+}
+
+.contact-item {
+    padding: 5px;
+}
+
 section {
-    height: 100vh;
-    /*background-color: #6d0aca;*/
-    margin: 0;
-    border: 2px solid #ccc;
+    height: 100%;
+    /*border: 1px solid #ffffff;*/
+}
+
+.details-container {
+    height: 80vh;
+    overflow-y: scroll;
+    scroll-behavior: smooth;
+    scrollbar-width: none; /* Hide scrollbar for Firefox */
+    -ms-overflow-style: none; /* Hide scrollbar for Internet Explorer and Edge */
+}
+
+.details-container::-webkit-scrollbar {
+    display: none;  /* Hide scrollbar for Chrome, Safari, and Opera */
 }

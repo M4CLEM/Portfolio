@@ -3,41 +3,94 @@
     <head>
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <title>Portfolio</title>
         <link rel="stylesheet" href="assets/style.css">
+        <title>Document</title>
     </head>
     <body>
-        <nav class="navbar" id="navbar">
-            <ul class="nav-list">
-                <li class="nav-item">
-                    <a href="#profile">Profile</a>
-                </li>
-                <li class="nav-item">
-                    <a href="#experience">Experience</a>
-                </li>
-                <li class="nav-item">
-                    <a href="#projects">Projects</a>
-                </li>
-                <li class="nav-item">
-                    <a href="#contact">Contacts</a>
-                </li>
-            </ul>
-        </nav>
-        <section class="profile" id="profile">
-            <h1>Profile</h1>
+        <div class="portfolio-container">
             <div class="profile-container">
+                <div class="name-title">
+                    <!--My Name-->
+                    <h1 class="name">Mark Clemence A. Aratan</h1>
+                    <!--Job Title-->
+                    <h3 class="job-title">Software Engineer</h3>
+                </div>
                 
+                <!--Summary-->
+                <p class="summary" id="summary">
+                    A fresh Computer Science graduate with understanding of programming concepts, experience in developing web applications and mobile platforms and basic database managements skills. Eager to apply the knowledge gained into the professional environment while gaining new skills and experiences in the industry.
+                </p>
+
+                <div class="education">
+                    <h2>Education</h2>
+                    <ul class="education-list">
+                        <li class="education-item">
+                            <h4 class="educational-institute">Pamantasan ng Lungsod ng Muntinlupa</h4>
+                            <sub class="course-batch">Bachelor of Science in Computer Science <br> 2021 - 2025</sub>
+                        </li>
+                        <li class="education-item">
+                            <h4 class="educational-institute">Muntinlupa National High School - Senior High</h4>
+                            <sub class="course-batch">Information and Communications Technology Strand <br> 2019 - 2021</sub>
+                        </li>
+                    </ul>
+                </div>
+
+                <hr>
+
+                <div class="quick-nav">
+                    <ul class="quick-nav-list">
+                        <li class="quick-nav-item"><a href="#experience">Experience</a></li>
+                        <li class="quick-nav-item"><a href="#projects">Projects</a></li>
+                        <li class="quick-nav-item"><a href="#certificate">Certificates</a></li>
+                    </ul>
+                </div>
+
+                <hr>
+
+                <div class="contacts">
+                    <h3>Contact</h3>
+                    <ul class="contact-list">
+                        <li class="contact-item">
+                            <img class="contact-icon" src="assets/images/github.png" alt="github">
+                            <a href="">Github</a>
+                        </li>
+                        <li class="contact-item">
+                            <img class="contact-icon" src="assets/images/linkedin.png" alt="github">
+                            <a href="">LinkedIn</a>
+                        </li>
+                        <li class="contact-item">
+                            <img class="contact-icon" src="assets/images/gmail.png" alt="github">
+                            <a href="">Email</a>
+                        </li>
+                        <li class="contact-item">
+                            <img class="contact-icon" src="assets/images/smartphone.png" alt="github">
+                            <a href="">Phone</a>
+                        </li>
+                    </ul>
+                </div>
             </div>
-        </section>
-        <section class="experience" id="experience">
-            <h1>Experience</h1>
-        </section>
-        <section class="projects" id="projects">
-            <h1>Projects</h1>
-        </section>
-        <section class="contanct" id="contact">
-            <h1>contact</h1>
-        </section>
+
+            <!--Portfolio Details-->
+            <div class="details-container">
+                <section class="experience" id="experience">
+                    <h1>Experience</h1>
+                    <div class="experience-container">
+
+                    </div>
+                </section>
+                <section class="projects" id="projects">
+                    <h1>Projects</h1>
+                    <div class="project-container">
+                        <!--INJECT PROJECTS USING THE JSON FILE WITH JAVASCRIPT-->
+                    </div>
+                </section>
+                <section class="certificate" id="certificate">
+                    <h1>Certificate</h1>
+                </section>
+            </div>
+
+        </div>
+
+        <script src="assets/script.js"></script>
     </body>
-    <script src="assets/script.js"></script>
 </html>

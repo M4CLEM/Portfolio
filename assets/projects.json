@@ -1,0 +1,26 @@
+[
+    {
+        "name": "OIE-Main",
+        "description": "",
+        "development-period": "",
+        "technology-stack": {
+            "frontend": "HTML, CSS, JavaScript",
+            "backend": "SQL, PHP",
+            "frameworks": "Bootstrap",
+            "version-control": "Git, Github",
+            "3rd-party-libraries": "SMTP Mailer, Google Cloud Console"
+        }
+    },
+
+    {
+        "name": "kickit-ecommerce app",
+        "description": "",
+        "development-period": "",
+        "technology-stack": {
+            "frontend": "Dart",
+            "backend": "framework",
+            "frameworks": "Flutter",
+            "version-control": "Git, Github"
+        }
+    }
+]
